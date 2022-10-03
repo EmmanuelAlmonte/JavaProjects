@@ -17,6 +17,7 @@ public class UpdateOrderDao {
 
     /**
      * Constructor
+     * 
      * @param database Database object
      */
     public UpdateOrderDao(Database database) {
@@ -25,16 +26,16 @@ public class UpdateOrderDao {
 
     /**
      * Updates the status of an order
+     * 
      * @param paramsDto Object with the parameters for the operation
      * @return Number of affected rows
      */
     public int updateOrderStatus(ParamsDto paramsDto) {
         int numberResults = 0;
 
-        try (Connection con = null;
-             PreparedStatement ps = createPreparedStatement(con, paramsDto)
-        ) {
-
+        try (Connection con = database.getConnection();
+                PreparedStatement ps = createPreparedStatement(con, paramsDto)) {
+            numberResults = ps.executeUpdate();
         } catch (SQLException ex) {
             ExceptionHandler.handleException(ex);
         }
@@ -44,13 +45,16 @@ public class UpdateOrderDao {
 
     /**
      * Creates a PreparedStatement object to update the order
-     * @param con Connnection object
+     * 
+     * @param con       Connnection object
      * @param paramsDto Object with the parameters to set on the PreparedStatement
      * @return A PreparedStatement object
      * @throws SQLException In case of an error
      */
     private PreparedStatement createPreparedStatement(Connection con, ParamsDto paramsDto) throws SQLException {
-
-        return null;
+        PreparedStatement ps = con.prepareStatement(query);
+        ps.setString(1, paramsDto.getStatus());
+        ps.setLong(2, paramsDto.getOrderId());
+        return ps;
     }
 }
