@@ -24,7 +24,7 @@ import java.util.concurrent.TimeUnit;
 public class MongoClientLesson extends AbstractLesson {
 
   private MongoClient mongoClient;
-  
+
 
   private MongoDatabase database;
 
