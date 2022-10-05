@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: mflix.api.daos.UserReportTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.182 s <<< FAILURE! - in mflix.api.daos.UserReportTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.148 s <<< FAILURE! - in mflix.api.daos.UserReportTest
 testMostActiveUserComments(mflix.api.daos.UserReportTest)  Time elapsed: 0 s  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
 Caused by: java.lang.IllegalStateException: Cannot load configuration class: mflix.config.MongoDBConfiguration

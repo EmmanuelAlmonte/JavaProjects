@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: mflix.api.daos.FacetedSearchTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.498 s <<< FAILURE! - in mflix.api.daos.FacetedSearchTest
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.515 s <<< FAILURE! - in mflix.api.daos.FacetedSearchTest
 testRatingRuntimeBuckets(mflix.api.daos.FacetedSearchTest)  Time elapsed: 0 s  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
 Caused by: java.lang.IllegalStateException: Cannot load configuration class: mflix.config.MongoDBConfiguration

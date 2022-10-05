@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: mflix.api.daos.UpdateCreateCommentTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.828 s <<< FAILURE! - in mflix.api.daos.UpdateCreateCommentTest
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.7 s <<< FAILURE! - in mflix.api.daos.UpdateCreateCommentTest
 testUserAddCommentWithNoID(mflix.api.daos.UpdateCreateCommentTest)  Time elapsed: 0 s  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
 Caused by: java.lang.IllegalStateException: Cannot load configuration class: mflix.config.MongoDBConfiguration
@@ -26,7 +26,7 @@ Caused by: java.lang.IllegalStateException: Cannot load configuration class: mfl
 Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.springframework.cglib.proxy.Enhancer
 Caused by: java.lang.ExceptionInInitializerError: Exception org.springframework.cglib.core.CodeGenerationException: java.lang.reflect.InaccessibleObjectException-->Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @26408470 [in thread "main"]
 
-testAddCommentWithId(mflix.api.daos.UpdateCreateCommentTest)  Time elapsed: 0.001 s  <<< ERROR!
+testAddCommentWithId(mflix.api.daos.UpdateCreateCommentTest)  Time elapsed: 0 s  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
 Caused by: java.lang.IllegalStateException: Cannot load configuration class: mflix.config.MongoDBConfiguration
 Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.springframework.cglib.proxy.Enhancer
